@@ -1,4 +1,5 @@
- public class Student { 
+package week3LabsAndHomework; 
+public class Student { 
    String fullName = ""; 
    int[] grades; 
 

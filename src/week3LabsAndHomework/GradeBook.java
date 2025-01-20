@@ -1,3 +1,4 @@
+package week3LabsAndHomework;
 import java.util.Scanner;
 
 public class GradeBook {

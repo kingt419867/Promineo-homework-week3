@@ -1,0 +1,2014 @@
+kingt@Lap9 MINGW64 ~
+$ version
+bash: version: command not found
+
+kingt@Lap9 MINGW64 ~
+$ git version
+git version 2.46.1.windows.1
+
+kingt@Lap9 MINGW64 ~
+$ pwd
+/c/Users/kingt
+
+kingt@Lap9 MINGW64 ~
+$ cd
+
+kingt@Lap9 MINGW64 ~
+$
+
+kingt@Lap9 MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ BullseyeCoverageError.txt
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ eclipse/
+ eclipse-workspace/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+kingt@Lap9 MINGW64 ~
+$ cd ^[[200~C:\Users\kingt\Documents\Training\Promineo~
+bash: cd: $'\E[200~C:UserskingtDocumentsTrainingPromineo~': No such file or directory
+
+kingt@Lap9 MINGW64 ~
+$ cd C:\Users\kingt\Documents\Training\Promineo
+bash: cd: C:UserskingtDocumentsTrainingPromineo: No such file or directory
+
+kingt@Lap9 MINGW64 ~
+$ cd "C:\Users\kingt\Documents\Training\Promineo"
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo
+$ pwd
+/c/Users/kingt/Documents/Training/Promineo
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo
+$ ls
+readme.md  week0/  week1/
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo
+$ git init
+Initialized empty Git repository in C:/Users/kingt/Documents/Training/Promineo/.git/
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ ls
+readme.md  week0/  week1/
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git add readme.md
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   readme.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        week0/
+        week1/
+
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git commit -am "test commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'kingt@Lap9.(none)')
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git config --global user.email "kingt@shentel.net"
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git config --global user.name "Tim King"
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   readme.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        week0/
+        week1/
+
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git remote add origin https://github.com/kingt419867/Promineo.git
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/kingt419867/Promineo.git'
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git branch -M main
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/kingt419867/Promineo.git'
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ pwd
+/c/Users/kingt/Documents/Training/Promineo
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git branch
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   readme.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        week0/
+        week1/
+
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git commit -m "initial commit"
+[main (root-commit) c1e00e5] initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.md
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        week0/
+        week1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 272 bytes | 272.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/kingt419867/Promineo.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git remote -v
+origin  https://github.com/kingt419867/Promineo.git (fetch)
+origin  https://github.com/kingt419867/Promineo.git (push)
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readme.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        week0/
+        week1/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ pwd
+/c/Users/kingt/Documents/Training/Promineo
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git add .
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   readme.md
+        new file:   week0/Screenshot 2024-12-28 163442.jpg
+        new file:   week1/question.txt
+
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git commit -m "updated readme"
+[main 3ac877b] updated readme
+ 3 files changed, 52 insertions(+)
+ create mode 100644 week0/Screenshot 2024-12-28 163442.jpg
+ create mode 100644 week1/question.txt
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 47.16 KiB | 9.43 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/kingt419867/Promineo.git
+   c1e00e5..3ac877b  main -> main
+branch 'main' set up to track 'origin/main'.
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git -h
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git branch -h
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]
+   or: git branch [<options>] [-l] [<pattern>...]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --[no-]verbose    show hash and subject, give twice for upstream branch
+    -q, --[no-]quiet      suppress informational messages
+    -t, --[no-]track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --[no-]set-upstream-to <upstream>
+                          change the upstream info
+    --[no-]unset-upstream unset the upstream info
+    --[no-]color[=<when>] use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --[no-]abbrev[=<n>]   use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --[no-]delete     delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --[no-]move       move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    --[no-]omit-empty     do not output a newline after empty formatted refs
+    -c, --[no-]copy       copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --[no-]list       list branch names
+    --[no-]show-current   show current branch name
+    --[no-]create-reflog  create the branch's reflog
+    --[no-]edit-description
+                          edit the description for the branch
+    -f, --[no-]force      force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --[no-]column[=<style>]
+                          list branches in columns
+    --[no-]sort <key>     field name to sort on
+    --[no-]points-at <object>
+                          print only branches of the object
+    -i, --[no-]ignore-case
+                          sorting and filtering are case insensitive
+    --[no-]recurse-submodules
+                          recurse through submodules
+    --[no-]format <format>
+                          format to use for the output
+
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git branch -M -h
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]
+   or: git branch [<options>] [-l] [<pattern>...]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --[no-]verbose    show hash and subject, give twice for upstream branch
+    -q, --[no-]quiet      suppress informational messages
+    -t, --[no-]track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --[no-]set-upstream-to <upstream>
+                          change the upstream info
+    --[no-]unset-upstream unset the upstream info
+    --[no-]color[=<when>] use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --[no-]abbrev[=<n>]   use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --[no-]delete     delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --[no-]move       move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    --[no-]omit-empty     do not output a newline after empty formatted refs
+    -c, --[no-]copy       copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --[no-]list       list branch names
+    --[no-]show-current   show current branch name
+    --[no-]create-reflog  create the branch's reflog
+    --[no-]edit-description
+                          edit the description for the branch
+    -f, --[no-]force      force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --[no-]column[=<style>]
+                          list branches in columns
+    --[no-]sort <key>     field name to sort on
+    --[no-]points-at <object>
+                          print only branches of the object
+    -i, --[no-]ignore-case
+                          sorting and filtering are case insensitive
+    --[no-]recurse-submodules
+                          recurse through submodules
+    --[no-]format <format>
+                          format to use for the output
+
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git branch test
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ bit branch
+bash: bit: command not found
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git branch
+* main
+  test
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git switch test
+Switched to branch 'test'
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (test)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git checkout -h
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --[no-]guess          second guess 'git checkout <no-such-branch>' (default)
+    --[no-]overlay        use overlay mode (default)
+    -q, --[no-]quiet      suppress progress reporting
+    --[no-]recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --[no-]progress       force progress reporting
+    -m, --[no-]merge      perform a 3-way merge with the new branch
+    --[no-]conflict <style>
+                          conflict style (merge, diff3, or zdiff3)
+    -d, --[no-]detach     detach HEAD at named commit
+    -t, --[no-]track[=(direct|inherit)]
+                          set branch tracking configuration
+    -f, --[no-]force      force checkout (throw away local modifications)
+    --[no-]orphan <new-branch>
+                          new unborn branch
+    --[no-]overwrite-ignore
+                          update ignored files (default)
+    --[no-]ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --[no-]patch      select hunks interactively
+    --[no-]ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git merge -h
+usage: git merge [<options>] [<commit>...]
+   or: git merge --abort
+   or: git merge --continue
+
+    -n                    do not show a diffstat at the end of the merge
+    --[no-]stat           show a diffstat at the end of the merge
+    --[no-]summary        (synonym to --stat)
+    --[no-]log[=<n>]      add (at most <n>) entries from shortlog to merge commit message
+    --[no-]squash         create a single commit instead of doing a merge
+    --[no-]commit         perform a commit if the merge succeeds (default)
+    -e, --[no-]edit       edit message before committing
+    --[no-]cleanup <mode> how to strip spaces and #comments from message
+    --[no-]ff             allow fast-forward (default)
+    --ff-only             abort if fast-forward is not possible
+    --[no-]rerere-autoupdate
+                          update the index with reused conflict resolution if possible
+    --[no-]verify-signatures
+                          verify that the named commit has a valid GPG signature
+    -s, --[no-]strategy <strategy>
+                          merge strategy to use
+    -X, --[no-]strategy-option <option=value>
+                          option for selected merge strategy
+    -m, --[no-]message <message>
+                          merge commit message (for a non-fast-forward merge)
+    -F, --file <path>     read message from file
+    --[no-]into-name <name>
+                          use <name> instead of the real target
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]abort          abort the current in-progress merge
+    --[no-]quit           --abort but leave index and working tree alone
+    --[no-]continue       continue the current in-progress merge
+    --[no-]allow-unrelated-histories
+                          allow merging unrelated histories
+    --[no-]progress       force progress reporting
+    -S, --[no-]gpg-sign[=<key-id>]
+                          GPG sign commit
+    --[no-]autostash      automatically stash/stash pop before and after
+    --[no-]overwrite-ignore
+                          update ignored files (default)
+    --[no-]signoff        add a Signed-off-by trailer
+    --no-verify           bypass pre-merge-commit and commit-msg hooks
+    --verify              opposite of --no-verify
+
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ type readme.md
+bash: type: readme.md: not found
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ cat readme.md
+This is my readme file for my Promineo class project repository.
+
+Git commands:
+echo "# week3assignment" >> README.md
+
+git init
+git add .
+
+git branch -M main
+git commit -m "first commit"
+git remote add origin https://github.com/GitUser/week3assignment.git
+
+git push -u origin main
+
+You may need to run these, if it's your first use of git:
+git config --global user.email You@example.com
+git config --global user.name UserName
+You will also need to create a token, for your ssh to contact github.  Github will tell you what to do.
+
+Use git status to see which files are committed and which are only staged, or uncommitted.
+git remote -v   will show which remote repo you're using.
+
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ pull
+bash: pull: command not found
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 2.49 KiB | 169.00 KiB/s, done.
+From https://github.com/kingt419867/Promineo
+   3ac877b..820d828  main       -> origin/main
+Updating 3ac877b..820d828
+Fast-forward
+ readme.md | 63 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 63 insertions(+)
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ cat readme.md
+This is my readme file for my Promineo class project repository.
+
+Git commands:
+echo "# week3assignment" >> README.md
+
+git init
+git add .
+
+git branch -M main
+git commit -m "first commit"
+git remote add origin https://github.com/GitUser/week3assignment.git
+
+git push -u origin main
+
+You may need to run these, if it's your first use of git:
+git config --global user.email You@example.com
+git config --global user.name UserName
+You will also need to create a token, for your ssh to contact github.  Github will tell you what to do.
+
+Use git status to see which files are committed and which are only staged, or uncommitted.
+git remote -v   will show which remote repo you're using.
+
+A regular workflow for git will start with
+git pull    This pulls down any files that have been changed by other people.
+            Then make your changes and do another
+git add .
+git commit -m "message"
+git push -u origin main  (or whatever branch you're pushing to, including possibly main:otherbranch)
+
+If you need additional branches, do a git branch to list what's already there, then
+git branch <new branch> to create a new branch
+git switch <other branch> to switch to the other branch
+git commit -m "message"
+git push -u <current branch> <target branch>
+git merge
+
+Here is the regular git -h help file:
+ git -h    Note that all git commands will give a help file if you end them with -h.
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+
+
+kingt@Lap9 MINGW64 ~/Documents/Training/Promineo (main)
+$ cd "C:\Users\kingt\eclipse-workspace"
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace
+$ pwd
+/c/Users/kingt/eclipse-workspace
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace
+$ ls
+HelloWorld/          Test01/  test02-conditionals/  week2Labs/
+MyFirstJavaProject/  test02/  week1Labs/
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace
+$ git init
+Initialized empty Git repository in C:/Users/kingt/eclipse-workspace/.git/
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git add .
+warning: in the working copy of '.metadata/.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.1.20240411-1122.xml', LF will be replaced by CRLF the next time Git touches it
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git commit -m "Initial Eclipse IDE commit, including Java weeks 1 and 2"
+[main (root-commit) 2704239] Initial Eclipse IDE commit, including Java weeks 1 and 2
+ 431 files changed, 26224 insertions(+)
+ create mode 100644 .metadata/.lock
+ create mode 100644 .metadata/.log
+ create mode 100644 .metadata/.mylyn/.taskListIndex/segments_1
+ create mode 100644 .metadata/.mylyn/.taskListIndex/write.lock
+ create mode 100644 .metadata/.mylyn/.tasks.xml.zip
+ create mode 100644 .metadata/.mylyn/repositories.xml.zip
+ create mode 100644 .metadata/.mylyn/tasks.xml.zip
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/0/600b48cea4d3001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/1/905c844b71d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/10/808052917cd0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/10/80a90ad7d9ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/12/402c016e08d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/12/e01bb7fd7dd0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/13/002a265279cf001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/14/60a07cef37ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/14/70963c2512d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/15/501922eb7bd0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/16/90a7e91403d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/17/d00e221b0ed5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/18/10854d23dace001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/19/6044cec410d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/1a/b028847692d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/1b/80818c6293d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/1c/006aebcb70d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/1c/e0b1233c10d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/1e/e0e35336d8ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/1f/2032fbc772d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/20/d05be2527ecf001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/26/000e1a3f6cd1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/26/a0916dd737ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/28/d0bad37f78d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/29/70e403ec94d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/2a/709aed17fdce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/2b/c0e06462dcce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/2c/802fd140ddce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/2e/207f9f170bd5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/2e/c0bdb01c11d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/2e/d0f28776ddce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/2f/0052d63693d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/2f/e0b618620ed5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/3/b06d9e170bd5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/30/a08333d367d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/31/00eada3dc9ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/32/70dbb90d0dd5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/33/109a2105e5d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/33/d05ab0a792d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/35/40486c5d7ed4001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/35/40fda957e5d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/35/704b67ba01d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/35/a053e6b37ecf001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/35/d0fd3aa872d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/37/c0a8b77ee4d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/38/90e22bb9ddce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/39/30063b8e80d4001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/3a/3059c02d7bd0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/3c/3090192462d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/3d/90a0fef6f0ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/3f/c0f80f2c39d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/40/a03537a864d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/42/b0c7ce2be1ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/45/200f6f7d13d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/45/903a117c18d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/46/007df79cf1ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/46/805a564b7bd0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/46/c025e3acd8ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/46/c06d55727fd0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/48/102cac050fd5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/48/8097c4d694d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/49/d0e176837ecf001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/4a/3023f2cda4d3001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/4a/70ea7f6995d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/4b/308e819a87d4001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/4b/e02d9c8f90d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/4d/7011257a77d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/4d/7098dca413d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/4e/5022a73ae1ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/4e/d0d735a51ad5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/4f/f00f5021f1ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/5/a08f6e2655d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/50/e0413aa005d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/51/d055e0fc7bd0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/56/10c1fc7edece001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/56/50c781a76fd1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/56/8037b0cf10d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/57/70fa65f7dbce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/57/b03a7fa77cd0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/58/70bde770e4d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/59/5015dc430ed5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/5a/10d1403a7ecf001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/5a/b0bb4dff02d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/5b/e01ff23075d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/5c/10b9ba6275d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/5d/3087f4a50ad5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/5d/60d1151e24d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/6/f02e9e4996d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/60/405b186610d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/61/4009eed305d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/62/70dad31436d2001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/64/604f916f69d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/64/c04bab263ace001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/65/40bd5c9570d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/69/00ea53827ed4001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/6a/3038ba12d3ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/6a/90da9f8f94d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/6c/3062744d70d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/6c/501bde810ed5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/6c/608bff4c15d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/6d/d0b6473e90d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/6e/50b1172294d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/6f/a0dde2a770d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/73/10d86a1e67d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/73/203a2cee7dd0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/74/c0f6ebbf61d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/76/a0c6c40339ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/78/509caabd11d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/78/a0579d8568d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/79/603983e0ffd4001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/7a/c056c56673d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/7d/10b29771c9ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/7d/800db34e90d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/8/40bb121895d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/8/702eb89416d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/8/7056316d55d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/8/a01d2a6079cf001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/80/d0180bf661d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/81/3078679cd4ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/82/b03c7fda01d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/83/a089802385d4001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/84/404a8c1927d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/85/405b17c818d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/85/a02770c071d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/87/900ecf7b90d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/88/1092e3d26bd1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/88/908b76767bd0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/88/b0ccb77dd8ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/88/c0c0666901d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/89/5081f61993d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/89/70bd47e980d4001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/89/9000c93fd8ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/8a/9091260cc8ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/8a/c09cea8b7ed0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/8b/00f38422dcce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/8c/90af61ff75cf001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/8d/2082b7ac39ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/9/b0e2e962f1ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/90/502fb26c0ed5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/91/90cd1a9c10d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/93/c0a4e7fc6bd1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/94/d0aa81981cd5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/96/709bb6f185d4001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/96/90cc53397cd0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/98/a0d3d8cc75cf001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/9a/1029bd5168d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/9b/902673701cd5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/9d/00d93ec77dd4001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/9d/50e3fd4008d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/9d/7090c6a012d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/9d/70de7c276dd1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/a/30eb31dc00d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/a0/20f9968210d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/a0/c0af495b15d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/a1/60b646b0c8ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/a1/70d512d870d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/a2/9036411d14d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/a3/a055c75576d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/a3/a0d6889a86d4001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/a5/00337b7e65d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/a5/b0316e5610d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/ab/4067c6ad22d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/ac/20996e5192d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/ae/50e52ffadace001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/ae/f05bc35cc9ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/af/405c6ff77bd0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/b0/00d2fb2414d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/b1/0034315a69d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/b1/907f5e241fd5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/b3/00acf12395d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/b3/1077baf075cf001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/b5/b06955223bce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/b7/00c088e171d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/b7/40adfc3c61d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/b7/50942f7c70d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/b8/30d9ec1c0dd5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/b8/5014093924d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/b8/80165de514d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/b9/30c3a38922d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/b9/80b6e64325ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/ba/8026cfaf67d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/bb/604641337dd0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/bc/00cf9c4171d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/bc/8016251983d4001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/be/100b3dcf75d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/be/50a703f334d2001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/be/8043062d06d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/c0/40918c94d9ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/c0/506bcbf994d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/c1/d083d8e47dd4001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/c3/601171dc6ed1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/c4/00112fab16d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/c6/707d216f15d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/c6/e0fc6fed6bd1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/c7/00f8112270d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/c8/0063b9b5dbce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/c8/701dff3b11d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/ca/f07a60ec66d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/cb/b0ba29c06fd1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/cc/c036cb200bd5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/cd/c0184284c8ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/cd/d07dc15980d4001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/ce/c0afd79c22d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/cf/704d7c5306d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/cf/e0fb1b03dbce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/d/2089c3e0ddce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/d1/a06fe1a531d2001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/d2/702198797cd0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/d2/a07b8c50d3ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/d3/a022733761d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/d3/b0ed322115d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/d5/e0a9f400cfd3001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/d6/40fccf54d4ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/d7/607ed40165d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/d7/709f55e07ad0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/d9/601670e792d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/d9/c052b10073d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/da/20aec6aeffd4001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/dc/0084c319dece001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/dc/d02640b366d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/dd/309001e6fbce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/de/90f0a3fc61d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/e2/6060a4df26d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/e3/20a3a31680d4001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/e3/908820fd7ad0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/e5/b032dabd7dcf001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/e9/f09561577cd0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/ea/f0fb9cb914d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/eb/107f936c71d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/eb/e064034d94d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/ee/70e146c378d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/ee/a0b4eb1092d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/ee/b01f7fe1d7ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/ee/f0bb492113d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/ef/e0b4b67384d4001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/f0/208438b555d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/f1/105ce38f6cd1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/f1/8034caab71d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/f1/90ef656822d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/f2/d0f6b51262d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/f3/10c7f78c2bd2001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/f4/b081279a13d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/f4/d0ccca4567d1001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/f4/e0b8ca3d15d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/f6/00d8f9adfbce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/f6/603459891cd5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/f6/805d7726c9ce001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/f7/a06d581935d2001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/f8/e0c4bfc17bd0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/fd/a013684375d0001f11cae827ce90199a
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.history/fd/c023a94d13d5001f1bb3d8cbdaa765c4
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/.org.eclipse.egit.core.cmp/.location
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/.org.eclipse.egit.core.cmp/.markers.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/.org.eclipse.egit.core.cmp/.syncinfo.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/HelloWorld/.indexes/af/history.index
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/HelloWorld/.indexes/e4/da/history.index
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/HelloWorld/.markers
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/HelloWorld/.markers.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/HelloWorld/.syncinfo.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/HelloWorld/org.eclipse.jdt.core/state.dat
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/MyFirstJavaProject/.indexes/e4/d3/history.index
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/MyFirstJavaProject/.markers
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/MyFirstJavaProject/.markers.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/MyFirstJavaProject/.syncinfo.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/MyFirstJavaProject/org.eclipse.jdt.core/state.dat
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/Test01/.indexes/e4/70/history.index
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/Test01/.indexes/e4/83/history.index
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/Test01/.markers
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/Test01/.markers.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/Test01/.syncinfo.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/Test01/org.eclipse.jdt.core/state.dat
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/test02-conditionals/.indexes/af/history.index
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/test02-conditionals/.markers.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/test02-conditionals/.syncinfo.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/test02/.indexes/af/history.index
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/test02/.indexes/e4/ec/history.index
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/test02/.markers
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/test02/.markers.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/test02/.syncinfo.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/week1Labs/.indexes/af/history.index
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/week1Labs/.indexes/e4/e3/history.index
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/week1Labs/.markers
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/week1Labs/.markers.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/week1Labs/.syncinfo.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/week1Labs/org.eclipse.jdt.core/state.dat
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/week2Labs/.indexes/af/history.index
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/week2Labs/.indexes/e4/a/history.index
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/week2Labs/.markers
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/week2Labs/.markers.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.projects/week2Labs/.syncinfo.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.root/1.tree
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+ create mode 100644 .metadata/.plugins/org.eclipse.core.resources/1.snap
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.junit.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jsch.core.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.m2e.discovery.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.context.core.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.java.ui.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.monitor.ui.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.urischeme.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.debug.core/.launches/AdvancedBooleans.launch
+ create mode 100644 .metadata/.plugins/org.eclipse.debug.core/.launches/Application.launch
+ create mode 100644 .metadata/.plugins/org.eclipse.debug.core/.launches/BasicLooping.launch
+ create mode 100644 .metadata/.plugins/org.eclipse.debug.core/.launches/Conditionals2.launch
+ create mode 100644 .metadata/.plugins/org.eclipse.debug.core/.launches/Week02BooleanConditionalsLoopsLab.launch
+ create mode 100644 .metadata/.plugins/org.eclipse.debug.core/.launches/bankAccountTest.launch
+ create mode 100644 .metadata/.plugins/org.eclipse.debug.core/.launches/hwClass.launch
+ create mode 100644 .metadata/.plugins/org.eclipse.debug.core/.launches/scannerTest.launch
+ create mode 100644 .metadata/.plugins/org.eclipse.debug.core/.launches/week1VariablesAndOperationsLab.launch
+ create mode 100644 .metadata/.plugins/org.eclipse.debug.ui/dialog_settings.xml
+ create mode 100644 .metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml
+ create mode 100644 .metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+ create mode 100644 .metadata/.plugins/org.eclipse.egit.core/.org.eclipse.egit.core.cmp/.project
+ create mode 100644 .metadata/.plugins/org.eclipse.egit.core/.org.eclipse.egit.core.cmp/.settings/org.eclipse.core.resources.prefs
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/1837591727.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/1865797976.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/2241545178.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/2380175872.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/2720524775.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/3413270776.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/4136445149.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/457054038.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/707204735.index
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/externalFilesCache
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/javaLikeNames.txt
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.launching/.install.xml
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/1.png
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/2.png
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/3.png
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/4.png
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/5.png
+ create mode 100644 .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/6.png
+ create mode 100644 .metadata/.plugins/org.eclipse.ltk.ui.refactoring/dialog_settings.xml
+ create mode 100644 .metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser
+ create mode 100644 .metadata/.plugins/org.eclipse.m2e.logback/0.log
+ create mode 100644 .metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.1.20240411-1122.xml
+ create mode 100644 .metadata/.plugins/org.eclipse.mylyn.github.ui/avatars.ser
+ create mode 100644 .metadata/.plugins/org.eclipse.oomph.setup/workspace.setup
+ create mode 100644 .metadata/.plugins/org.eclipse.search/dialog_settings.xml
+ create mode 100644 .metadata/.plugins/org.eclipse.tips.ide/dialog_settings.xml
+ create mode 100644 .metadata/.plugins/org.eclipse.tm.terminal.view.ui/.executables/data.properties
+ create mode 100644 .metadata/.plugins/org.eclipse.tm.terminal.view.ui/dialog_settings.xml
+ create mode 100644 .metadata/.plugins/org.eclipse.ui.intro/dialog_settings.xml
+ create mode 100644 .metadata/.plugins/org.eclipse.ui.intro/introstate
+ create mode 100644 .metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml
+ create mode 100644 .metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml
+ create mode 100644 .metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml
+ create mode 100644 .metadata/version.ini
+ create mode 100644 HelloWorld/.classpath
+ create mode 100644 HelloWorld/.project
+ create mode 100644 HelloWorld/.settings/org.eclipse.core.resources.prefs
+ create mode 100644 HelloWorld/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 HelloWorld/bin/HelloWorldPackage/hwClass.class
+ create mode 100644 HelloWorld/src/HelloWorldPackage/hwClass.java
+ create mode 100644 MyFirstJavaProject/.classpath
+ create mode 100644 MyFirstJavaProject/.project
+ create mode 100644 MyFirstJavaProject/.settings/org.eclipse.core.resources.prefs
+ create mode 100644 MyFirstJavaProject/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 MyFirstJavaProject/bin/MainPackage/Application.class
+ create mode 100644 MyFirstJavaProject/bin/MainPackage/openClass.class
+ create mode 100644 MyFirstJavaProject/bin/module-info.class
+ create mode 100644 MyFirstJavaProject/src/MainPackage/Application.java
+ create mode 100644 MyFirstJavaProject/src/MainPackage/openClass.java
+ create mode 100644 MyFirstJavaProject/src/module-info.java
+ create mode 100644 Test01/.classpath
+ create mode 100644 Test01/.project
+ create mode 100644 Test01/.settings/org.eclipse.core.resources.prefs
+ create mode 100644 Test01/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 Test01/bin/ScannerTest/scannerTest.class
+ create mode 100644 Test01/bin/bankAccountTest/bankAccountTest.class
+ create mode 100644 Test01/bin/module-info.class
+ create mode 100644 Test01/src/ScannerTest/scannerTest.java
+ create mode 100644 Test01/src/bankAccountTest/bankAccountTest.java
+ create mode 100644 Test01/src/module-info.java
+ create mode 100644 test02-conditionals/.classpath
+ create mode 100644 test02-conditionals/.project
+ create mode 100644 test02-conditionals/.settings/org.eclipse.core.resources.prefs
+ create mode 100644 test02-conditionals/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 test02-conditionals/bin/test02_conditionals/BasicLooping.class
+ create mode 100644 test02-conditionals/bin/test02_conditionals/Conditionals2.class
+ create mode 100644 test02-conditionals/src/test02_conditionals/BasicLooping.java
+ create mode 100644 test02-conditionals/src/test02_conditionals/Conditionals2.java
+ create mode 100644 test02/.classpath
+ create mode 100644 test02/.project
+ create mode 100644 test02/.settings/org.eclipse.core.resources.prefs
+ create mode 100644 test02/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 test02/bin/test02/AdvancedBooleans.class
+ create mode 100644 test02/src/test02/AdvancedBooleans.java
+ create mode 100644 week1Labs/.classpath
+ create mode 100644 week1Labs/.project
+ create mode 100644 week1Labs/.settings/org.eclipse.core.resources.prefs
+ create mode 100644 week1Labs/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 week1Labs/bin/week1Labs/week1VariablesAndOperationsLab.class
+ create mode 100644 week1Labs/src/week1Labs/week1VariablesAndOperationsLab.java
+ create mode 100644 week2Labs/.classpath
+ create mode 100644 week2Labs/.project
+ create mode 100644 week2Labs/.settings/org.eclipse.core.resources.prefs
+ create mode 100644 week2Labs/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 week2Labs/bin/week02/Week02BooleanConditionalsLoopsLab.class
+ create mode 100644 week2Labs/src/week02/Week02BooleanConditionalsLoopsLab.java
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ get status
+bash: get: command not found
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ pwd
+/c/Users/kingt/eclipse-workspace
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git remote -v
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git remote add origin https://github.com/kingt419867/Promineo.git
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git add .
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git remote -v
+origin  https://github.com/kingt419867/Promineo.git (fetch)
+origin  https://github.com/kingt419867/Promineo.git (push)
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git list
+git: 'list' is not a git command. See 'git --help'.
+
+The most similar commands are
+        bisect
+        rev-list
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git push -u origin main
+To https://github.com/kingt419867/Promineo.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/kingt419867/Promineo.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ pull
+bash: pull: command not found
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 13 (delta 2), reused 8 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (13/13), 49.43 KiB | 346.00 KiB/s, done.
+From https://github.com/kingt419867/Promineo
+ * [new branch]      main       -> origin/main
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> main
+
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git commit -m "adding eclipse weeks 1 and 2"
+[main a1c78f4] adding eclipse weeks 1 and 2
+ 1 file changed, 1663 insertions(+), 1663 deletions(-)
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git -h
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ ls
+HelloWorld/  MyFirstJavaProject/  Test01/  test02/  test02-conditionals/  week1Labs/  week2Labs/
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git branch list
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git branch List
+fatal: a branch named 'List' already exists
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git branch -h
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]
+   or: git branch [<options>] [-l] [<pattern>...]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --[no-]verbose    show hash and subject, give twice for upstream branch
+    -q, --[no-]quiet      suppress informational messages
+    -t, --[no-]track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --[no-]set-upstream-to <upstream>
+                          change the upstream info
+    --[no-]unset-upstream unset the upstream info
+    --[no-]color[=<when>] use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --[no-]abbrev[=<n>]   use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --[no-]delete     delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --[no-]move       move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    --[no-]omit-empty     do not output a newline after empty formatted refs
+    -c, --[no-]copy       copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --[no-]list       list branch names
+    --[no-]show-current   show current branch name
+    --[no-]create-reflog  create the branch's reflog
+    --[no-]edit-description
+                          edit the description for the branch
+    -f, --[no-]force      force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --[no-]column[=<style>]
+                          list branches in columns
+    --[no-]sort <key>     field name to sort on
+    --[no-]points-at <object>
+                          print only branches of the object
+    -i, --[no-]ignore-case
+                          sorting and filtering are case insensitive
+    --[no-]recurse-submodules
+                          recurse through submodules
+    --[no-]format <format>
+                          format to use for the output
+
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git branch list -d
+Deleted branch list (was a1c78f4).
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ pwd
+/c/Users/kingt/eclipse-workspace
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git branch
+* main
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git reset --soft HEAD^
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git reset --soft HEAD^
+fatal: ambiguous argument 'HEAD^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git reset --soft HEAD^^
+fatal: ambiguous argument 'HEAD^^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .metadata/.mylyn/.tasks.xml.zip
+        modified:   .metadata/.mylyn/tasks.xml.zip
+
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git reset HEAD .
+Unstaged changes after reset:
+M       .metadata/.mylyn/.tasks.xml.zip
+M       .metadata/.mylyn/tasks.xml.zip
+M       .metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ ls
+HelloWorld/  MyFirstJavaProject/  Test01/  test02/  test02-conditionals/  week1Labs/  week2Labs/
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git reset HEAD HelloWorld
+Unstaged changes after reset:
+M       .metadata/.mylyn/.tasks.xml.zip
+M       .metadata/.mylyn/tasks.xml.zip
+M       .metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git reset HEAD MyFirstJavaProject/
+Unstaged changes after reset:
+M       .metadata/.mylyn/.tasks.xml.zip
+M       .metadata/.mylyn/tasks.xml.zip
+M       .metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .metadata/.mylyn/.tasks.xml.zip
+        modified:   .metadata/.mylyn/tasks.xml.zip
+        modified:   .metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git reset --soft HEAD~2
+fatal: ambiguous argument 'HEAD~2': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git reset --soft HEAD~1
+fatal: ambiguous argument 'HEAD~1': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ ls
+HelloWorld/  MyFirstJavaProject/  Test01/  test02/  test02-conditionals/  week1Labs/  week2Labs/
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ cd HellowWorld
+bash: cd: HellowWorld: No such file or directory
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ cd HelloWorld
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/HelloWorld (main)
+$ ls
+bin/  src/
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/HelloWorld (main)
+$ cd ..
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/kingt/eclipse-workspace/.git/
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git remote add origin https://github.com/kingt419867/Promineo.git
+error: remote origin already exists.
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .metadata/.mylyn/.tasks.xml.zip
+        modified:   .metadata/.mylyn/tasks.xml.zip
+        modified:   .metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git branch
+* main
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git add .
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git commit -m "trying to recommit everything"
+[main 266417f] trying to recommit everything
+ 3 files changed, 1663 insertions(+), 1663 deletions(-)
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git push -u origin main
+To https://github.com/kingt419867/Promineo.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/kingt419867/Promineo.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git push -h
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]repo <repository>
+                          repository
+    --[no-]all            push all branches
+    --[no-]branches       alias of --all
+    --[no-]mirror         mirror all refs
+    -d, --[no-]delete     delete refs
+    --[no-]tags           push tags (can't be used with --all or --branches or --mirror)
+    -n, --[no-]dry-run    dry run
+    --[no-]porcelain      machine-readable output
+    -f, --[no-]force      force updates
+    --[no-]force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --[no-]force-if-includes
+                          require remote updates to be integrated locally
+    --[no-]recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --[no-]thin           use thin pack
+    --[no-]receive-pack <receive-pack>
+                          receive pack program
+    --[no-]exec <receive-pack>
+                          receive pack program
+    -u, --[no-]set-upstream
+                          set upstream for git pull/status
+    --[no-]progress       force progress reporting
+    --[no-]prune          prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --verify              opposite of --no-verify
+    --[no-]follow-tags    push missing but relevant tags
+    --[no-]signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --[no-]atomic         request atomic transaction on remote side
+    -o, --[no-]push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git push -f origin main
+Enumerating objects: 669, done.
+Counting objects: 100% (669/669), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (608/608), done.
+Writing objects: 100% (669/669), 16.04 MiB | 2.15 MiB/s, done.
+Total 669 (delta 242), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (242/242), done.
+To https://github.com/kingt419867/Promineo.git
+ + 820d828...266417f main -> main (forced update)
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ ls
+HelloWorld/          Test01/  test02-conditionals/  week2Labs/
+MyFirstJavaProject/  test02/  week1Labs/            week3LabsAndHomework/
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ cd week3LabsAndHomework
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ pwd
+/c/Users/kingt/eclipse-workspace/week3LabsAndHomework
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git init
+Initialized empty Git repository in C:/Users/kingt/eclipse-workspace/week3LabsAndHomework/.git/
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ ls
+bin/  src/
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git add .
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .classpath
+        new file:   .gitignore
+        new file:   .project
+        new file:   .settings/org.eclipse.core.resources.prefs
+        new file:   .settings/org.eclipse.jdt.core.prefs
+        new file:   src/week3LabsAndHomework/Week3Labs.java
+
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git commit -m "initializing Promineo Week3"
+[main (root-commit) feb546a] initializing Promineo Week3
+ 6 files changed, 54 insertions(+)
+ create mode 100644 .classpath
+ create mode 100644 .gitignore
+ create mode 100644 .project
+ create mode 100644 .settings/org.eclipse.core.resources.prefs
+ create mode 100644 .settings/org.eclipse.jdt.core.prefs
+ create mode 100644 src/week3LabsAndHomework/Week3Labs.java
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git remote add origin https://github.com/kingt419867/Promineo-homework-week3.git
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git push -u origin main
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (11/11), 1.41 KiB | 360.00 KiB/s, done.
+Total 11 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/kingt419867/Promineo-homework-week3.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ cd ..
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .metadata/.mylyn/.tasks.xml.zip
+        modified:   .metadata/.mylyn/tasks.xml.zip
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/.org.eclipse.egit.core.cmp/.markers.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/.org.eclipse.egit.core.cmp/.syncinfo.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/HelloWorld/.markers.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/HelloWorld/.syncinfo.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/MyFirstJavaProject/.markers.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/MyFirstJavaProject/.syncinfo.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/Test01/.markers.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/Test01/.syncinfo.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/test02-conditionals/.markers.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/test02-conditionals/.syncinfo.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/test02/.markers.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/test02/.syncinfo.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/week1Labs/.markers.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/week1Labs/.syncinfo.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/week2Labs/.markers.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/week2Labs/.syncinfo.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/1.snap
+        modified:   .metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml
+        modified:   .metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+        modified:   .metadata/.plugins/org.eclipse.jdt.core/1865797976.index
+        modified:   .metadata/.plugins/org.eclipse.jdt.core/4136445149.index
+        modified:   .metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+        modified:   .metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat
+        modified:   test02-conditionals/bin/test02_conditionals/Conditionals2.class
+        modified:   test02-conditionals/src/test02_conditionals/Conditionals2.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        week3LabsAndHomework/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git add .
+warning: in the working copy of '.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: adding embedded git repository: week3LabsAndHomework
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> week3LabsAndHomework
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached week3LabsAndHomework
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git rm --cached week3LabsAndHomework
+error: the following file has staged content different from both the
+file and the HEAD:
+    week3LabsAndHomework
+(use -f to force removal)
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git rm --cached week3LabsAndHomework -f
+rm 'week3LabsAndHomework'
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   .metadata/.mylyn/.tasks.xml.zip
+        modified:   .metadata/.mylyn/tasks.xml.zip
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/.org.eclipse.egit.core.cmp/.markers.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/.org.eclipse.egit.core.cmp/.syncinfo.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/HelloWorld/.markers.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/HelloWorld/.syncinfo.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/MyFirstJavaProject/.markers.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/MyFirstJavaProject/.syncinfo.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/Test01/.markers.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/Test01/.syncinfo.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/test02-conditionals/.markers.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/test02-conditionals/.syncinfo.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/test02/.markers.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/test02/.syncinfo.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/week1Labs/.markers.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/week1Labs/.syncinfo.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/week2Labs/.markers.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/week2Labs/.syncinfo.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap
+        modified:   .metadata/.plugins/org.eclipse.core.resources/1.snap
+        modified:   .metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml
+        modified:   .metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+        modified:   .metadata/.plugins/org.eclipse.jdt.core/1865797976.index
+        modified:   .metadata/.plugins/org.eclipse.jdt.core/4136445149.index
+        modified:   .metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+        modified:   .metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat
+        modified:   test02-conditionals/bin/test02_conditionals/Conditionals2.class
+        modified:   test02-conditionals/src/test02_conditionals/Conditionals2.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        week3LabsAndHomework/
+
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git commit -m "added some stuff about arrays"
+[main 71c5e56] added some stuff about arrays
+ 29 files changed, 1706 insertions(+), 1677 deletions(-)
+ create mode 100644 .gitignore
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ git push -u origin main
+Enumerating objects: 79, done.
+Counting objects: 100% (79/79), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (39/39), done.
+Writing objects: 100% (43/43), 520.71 KiB | 2.91 MiB/s, done.
+Total 43 (delta 29), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (29/29), completed with 25 local objects.
+To https://github.com/kingt419867/Promineo.git
+   266417f..71c5e56  main -> main
+branch 'main' set up to track 'origin/main'.
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ ls
+HelloWorld/          Test01/  test02-conditionals/  week2Labs/
+MyFirstJavaProject/  test02/  week1Labs/            week3LabsAndHomework/
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace (main)
+$ cd week3LabsAndHomework
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/week3LabsAndHomework/GradeBook.java
+        src/week3LabsAndHomework/Student.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git add .
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git commit -m "Starting week 3 on arrays."
+[main 20dd6f6] Starting week 3 on arrays.
+ 2 files changed, 59 insertions(+)
+ create mode 100644 src/week3LabsAndHomework/GradeBook.java
+ create mode 100644 src/week3LabsAndHomework/Student.java
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 1.07 KiB | 548.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/kingt419867/Promineo-homework-week3.git
+   feb546a..20dd6f6  main -> main
+branch 'main' set up to track 'origin/main'.
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ pwd
+/c/Users/kingt/eclipse-workspace/week3LabsAndHomework
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/week3LabsAndHomework/GradeBook.java
+        modified:   src/week3LabsAndHomework/Student.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/week3LabsAndHomework/ArrayIceCreamOrder.java
+        src/week3LabsAndHomework/ArrayMenuInput.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git add .
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git commit -m "adding up through the start of the labs in week 3"
+[main 48ad2b0] adding up through the start of the labs in week 3
+ 4 files changed, 264 insertions(+), 1 deletion(-)
+ create mode 100644 src/week3LabsAndHomework/ArrayIceCreamOrder.java
+ create mode 100644 src/week3LabsAndHomework/ArrayMenuInput.java
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git push -u origin main
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 2.90 KiB | 1.45 MiB/s, done.
+Total 8 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/kingt419867/Promineo-homework-week3.git
+   20dd6f6..48ad2b0  main -> main
+branch 'main' set up to track 'origin/main'.
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/week3LabsAndHomework/Week3Labs.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/week3LabsAndHomework/Week3Exercises.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git add .
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git commit -m "week 3 methods 1"
+[main 3de9f9b] week 3 methods 1
+ 2 files changed, 173 insertions(+), 2 deletions(-)
+ create mode 100644 src/week3LabsAndHomework/Week3Exercises.java
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git push -u origin main
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 1.79 KiB | 918.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/kingt419867/Promineo-homework-week3.git
+   48ad2b0..3de9f9b  main -> main
+branch 'main' set up to track 'origin/main'.
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/week3LabsAndHomework/Week3Exercises.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git add .
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git commit -m "week 3 methods 2"
+[main 880f3c8] week 3 methods 2
+ 1 file changed, 159 insertions(+), 10 deletions(-)
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 2.04 KiB | 1.02 MiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/kingt419867/Promineo-homework-week3.git
+   3de9f9b..880f3c8  main -> main
+branch 'main' set up to track 'origin/main'.
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/week3LabsAndHomework/week3ArraysHomework.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git add .
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git commit -m "week 3 Arrays 1"
+[main 3a297cb] week 3 Arrays 1
+ 1 file changed, 93 insertions(+)
+ create mode 100644 src/week3LabsAndHomework/week3ArraysHomework.java
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git push -u origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 1.15 KiB | 1.15 MiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/kingt419867/Promineo-homework-week3.git
+   880f3c8..3a297cb  main -> main
+branch 'main' set up to track 'origin/main'.
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/week3LabsAndHomework/week3ArraysHomework.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git add .
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git commit -m "week 3 Arrays 2"
+[main a0868c1] week 3 Arrays 2
+ 1 file changed, 145 insertions(+), 21 deletions(-)
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 2.13 KiB | 2.13 MiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/kingt419867/Promineo-homework-week3.git
+   3a297cb..a0868c1  main -> main
+branch 'main' set up to track 'origin/main'.
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/week3LabsAndHomework/week3ArraysHomework.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git add .
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git commit -m "week 3 quiz work"
+[main f9f2ba1] week 3 quiz work
+ 1 file changed, 60 insertions(+), 37 deletions(-)
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 867 bytes | 867.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/kingt419867/Promineo-homework-week3.git
+   a0868c1..f9f2ba1  main -> main
+branch 'main' set up to track 'origin/main'.
+
+kingt@Lap9 MINGW64 ~/eclipse-workspace/week3LabsAndHomework (main)
+$ pwd
+/c/Users/kingt/eclipse-workspace/week3LabsAndHomework

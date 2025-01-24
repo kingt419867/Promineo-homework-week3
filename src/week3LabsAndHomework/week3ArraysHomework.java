@@ -176,42 +176,65 @@ public class week3ArraysHomework {
 //}	
 	
 	
-	static void multidimensional(int a, int b) {
-	    /****** DO NOT CHANGE THE CODE ABOVE THIS LINE ******/
-		    // Check for error -- invalid parameters with an if/else
-			if (a > 2 && b > 2) {
-			    // If both parameters are > 2
-			    // Declare a multidimensional array something like this:
-			    //          int[][] arr = new int[param1][param2];
-			int[][] arr = new int[a][b];    
-			
-			    // Create two loops to populate your new multidimensional array
-			    // Note:  you will need a new index in each for-loop. 
-			    //          one index will be used for the first for-loop's index (0 to param1 - 1)
-			    //          the second index will be used for the second for-loop's index (0 to param2 - 1)		
-			for (int i = 0; i < arr.length; i++) {
-			    for (int j = 0; j < arr[i].length; j++) {
-			        arr[i][j] = j;
-			        System.out.print(arr[i][j] + " ");
-			    }
-			    System.out.println(); // Taken together, these 2 print statements will print out the entire table, row by row, as a table.
-			} 
-			System.out.println(arr[0][arr[0].length - 1]);
-			
-			    // After you have populated your multidimensional array, 
-			    // Print out the value of arr[firstPosition][lastPosition]
-			} else {	// This ends the error checking ifelse statement, at the top.
-				System.out.println("Both numbers need to be greater than 2.");
-			}
-			
-		}
+//	static void multidimensional(int a, int b) {
+//	    /****** DO NOT CHANGE THE CODE ABOVE THIS LINE ******/
+//		    // Check for error -- invalid parameters with an if/else
+//			if (a > 2 && b > 2) {
+//			    // If both parameters are > 2
+//			    // Declare a multidimensional array something like this:
+//			    //          int[][] arr = new int[param1][param2];
+//			int[][] arr = new int[a][b];    
+//			
+//			    // Create two loops to populate your new multidimensional array
+//			    // Note:  you will need a new index in each for-loop. 
+//			    //          one index will be used for the first for-loop's index (0 to param1 - 1)
+//			    //          the second index will be used for the second for-loop's index (0 to param2 - 1)		
+//			for (int i = 0; i < arr.length; i++) {
+//			    for (int j = 0; j < arr[i].length; j++) {
+//			        arr[i][j] = j;
+//			        System.out.print(arr[i][j] + " ");
+//			    }
+//			    System.out.println(); // Taken together, these 2 print statements will print out the entire table, row by row, as a table.
+//			} 
+//			System.out.println(arr[0][arr[0].length - 1]);
+//			
+//			    // After you have populated your multidimensional array, 
+//			    // Print out the value of arr[firstPosition][lastPosition]
+//			} else {	// This ends the error checking ifelse statement, at the top.
+//				System.out.println("Both numbers need to be greater than 2.");
+//			}
+//			
+//		}
+//		
+//	    /****** DO NOT CHANGE THE CODE BElOW THIS LINE ******/
+		//public static void main(String[] args) {
+//			//Scanner in = new Scanner(System.in);
+//			int input1, input2;
+//			input1 = 10;
+//			input2 = 15;
+//			multidimensional(input1, input2);
+//		}
+//	}	
+
 		
-	    /****** DO NOT CHANGE THE CODE BElOW THIS LINE ******/
-		public static void main(String[] args) {
-			//Scanner in = new Scanner(System.in);
-			int input1, input2;
-			input1 = 10;
-			input2 = 15;
-			multidimensional(input1, input2);
+	public static int power(int base, int exponent) { // This calculates a base raised to the power of an exponent.
+		int result = 1;
+		for (int index = 1; index <= exponent; index++) {
+			result = result * base;
 		}
-	}	
+		return result;
+	}
+	
+	public static void main(String[] args) {
+		int base = 3;
+		int exponent = 4;
+		//int result = 1;
+		//System.out.println(power(result));
+		int result = power(base, exponent);
+		System.out.println(result);
+	
+	}
+}
+	
+		
+	
